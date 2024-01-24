@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c130a915fd.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
           theme: {
@@ -43,24 +44,77 @@
                       <li><a>Blog</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">Hockey <span class="text-btn-custom">’</span> s</a>
+                  <a class="btn btn-ghost text-4xl font-extrabold gap-0">Hockey<span class="text-btn-custom">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 gap-10">
+                  <ul class="menu menu-horizontal px-1 gap-8">
                     <li><a class="text-btn-custom font-extrabold">Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Pages</a></li>
                     <li><a>Blog</a></li>
+                    <li><a>About</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn bg-btn-custom">Button</a>
+                <div class="navbar-end flex gap-6">
+                  <div class="text-[#89898B]"><i class="fa-solid fa-magnifying-glass"></i></div>
+                  <div><a class="btn bg-btn-custom text-white">Get Ticket</a></div>
                 </div>
               </div>
         </nav>
     </header>
+    <div class="container mx-auto">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full h-[500px]" />
+          <div class="absolute right-8 bottom-8 bg-black rounded-lg p-4">
+            <h4 class="text-1.5xl text-white font-bold mb-3">Meet all the heroes from the field</h4>
+            <p class="w-96 text-sm text-gray-500">A good hockey player plays where the puck is. A great hockey player plays where the puck is going to be.Every day you guys look worse and worse. And today you played like tomorrow." - John Mariucci"</p>
+          </div>
+          <div class="absolute  transform -translate-y-1/2 left-5 bottom-4">
+            <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+            <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div class="absolute  transform -translate-y-1/2 left-5 bottom-4">
+            <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+            <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <main>
-
+      <section class="container mx-auto my-16">
+       <div>
+        <h3 class="text-2xl font-extrabold text-center">Professional Hockeys Club</h3>
+        <p class="text-gray-600 text-center w-[600px] mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+       </div>
+       <div class="flex flex-col mx-auto lg:flex-row justify-around">
+          <div>
+            <div class="radial-progress text-red-600" style="--value:87;" role="progressbar">87%</div>
+            <div class="">
+              <h4>Prayer Facility</h4>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+          <div>
+            <div class="radial-progress text-emerald-500" style="--value:95;" role="progressbar">95%</div>
+            <h4>Experienced Coach</h4>
+            <p >Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <div>
+            <div class="radial-progress text-orange-500" style="--value:90;" role="progressbar">90%</div>
+            <h4>Senior Player</h4>
+            <p >Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <div>
+            <div class="radial-progress text-cyan-500" style="--value:80;" role="progressbar">80%</div>
+            <h4>Training Ground</h4>
+            <p >Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+       </div>
+      </section>
     </main>
     <footer>
 
